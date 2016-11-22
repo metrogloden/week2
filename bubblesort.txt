@@ -1,0 +1,30 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        int intArray[] = new int[]{5,90,35,45,150,3};
+        int temp;
+        boolean fixed = false;
+        
+        while(fixed==false) {
+            
+            fixed = true;
+        
+        for(int i=0; i<intArray.length-1; i++) {
+            
+            if(intArray[i] > intArray[i+1]) {
+                temp = intArray[i+1];
+                intArray[i+1] = intArray[i];
+                intArray[i] = temp;
+                fixed=false;
+                
+            }
+        }
+        
+        }
+        for(int i=0; i<intArray.length; i++) {
+            System.out.println("Smallest going from top to bottom");
+            System.out.println(intArray[i]);
+        }
+            
+        }
+}
